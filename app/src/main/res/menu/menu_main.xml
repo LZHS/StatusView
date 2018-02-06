@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_01"
+        android:title="动态更改界面展示"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_02"
+        android:title="扩展自己定义界面"
+        app:showAsAction="never" />
+</menu>

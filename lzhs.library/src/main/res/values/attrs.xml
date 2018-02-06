@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="StatusViewAttr" format="reference"/>
+
+
+    <declare-styleable name="StatusView">
+        <!-- 空布局资源id -->
+        <attr name="StatusEmptyResId" format="reference"/>
+        <!-- 加载中布局资源id -->
+        <attr name="StatusLoadingResId" format="reference"/>
+        <!-- 错误布局资源id -->
+        <attr name="StatusErrorResId" format="reference"/>
+
+        <!-- 空布局展示图片 -->
+        <attr name="StatusEmptyImage" format="reference"/>
+        <!-- 空布局展示文本 -->
+        <attr name="StatusEmptyText" format="string"/>
+
+        <!-- 错误布局图片 -->
+        <attr name="StatusErrorImage" format="reference"/>
+        <!-- 错误布局文本 -->
+        <attr name="StatusErrorText" format="string"/>
+        <!-- 错误布局重试按钮文本 -->
+        <attr name="StatusRetryText" format="string"/>
+
+        <!-- 加载布局文本 -->
+        <attr name="StatusLoadingText" format="string"/>
+
+        <!-- 文本颜色 -->
+        <attr name="StatusTextColor" format="color"/>
+        <!-- 文本尺寸 -->
+        <attr name="StatusTextSize" format="dimension"/>
+
+        <!-- 按钮文本颜色 -->
+        <attr name="StatusButtonTextColor" format="color"/>
+        <!-- 按钮文本尺寸 -->
+        <attr name="StatusButtonTextSize" format="dimension"/>
+        <!-- 按钮背景 -->
+        <attr name="StatusButtonBackground" format="reference"/>
+
+    </declare-styleable>
+
+</resources>
