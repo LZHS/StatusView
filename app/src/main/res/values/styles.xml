@@ -8,7 +8,9 @@
         <item name="windowNoTitle">true</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
+
     <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
         <item name="android:colorBackground">#aa000000</item>
         <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
@@ -17,4 +19,25 @@
     <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
         <item name="overlapAnchor">false</item>
     </style>
+
+    <style name="MyAppTheme" parent="AppTheme">
+        <item name="StatusViewAttr">@style/CurssStatusStyle</item>
+    </style>
+
+    <style name="CurssStatusStyle" parent="StatusView.Style">
+        <item name="StatusTextColor">#99ff99</item>
+        <item name="StatusTextSize">13sp</item>
+
+        <item name="StatusButtonTextColor">#ff99ff</item>
+        <item name="StatusButtonTextSize">13sp</item>
+        <item name="StatusButtonBackground">@drawable/status_loading_layout_button</item>
+
+        <item name="StatusEmptyImage">@mipmap/empty</item>
+        <item name="StatusEmptyText">暂无数据style</item>
+        <item name="StatusErrorImage">@mipmap/error</item>
+        <item name="StatusErrorText">无网络连接，请检查您的网络style...</item>
+        <item name="StatusRetryText">加载失败，点击重试~style~</item>
+        <item name="StatusLoadingText">正在加载...style</item>
+    </style>
+
 </resources>

@@ -1,7 +1,7 @@
 # StatusView 多功能状态控件  
 简单实用的页面多状态布局(content,loading,empty,error)  
  
-
+[GitHub 地址](https://github.com/LZHS/StatusView)
 ![内容视图](https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145823-156.jpg?raw=true)
 ![加载视图](https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145457-429.jpg?raw=true)
 ![错误视图](https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145509-817.jpg?raw=true)
@@ -9,48 +9,67 @@
 
 
 ## Gradle
+[![](https://jitpack.io/v/LZHS/StatusView.svg)](https://jitpack.io/#LZHS/StatusView)
 
 ``` groovy
-repositories { 
-    maven { url "https://jitpack.io" }
-} 
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 dependencies {
-    compile 'com.github.czy1121:loadinglayout:1.0.1'
-}
+	        compile 'com.github.LZHS:StatusView:v1.0'
+	}
 ```
     
 ## Usage 
 
 **在主题中设置默认样式**
 
-``` xml 
-<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-    ...
-    <item name="styleLoadingLayout">@style/LoadingLayoutStyle</item>
-</style>
+``` xml  
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        
+        <item name="StatusViewAttr">@style/CurssStatusStyle</item> 
+    </style> 
+    
+    <style name="CurssStatusStyle" parent="StatusView.Style">
+        <item name="StatusTextColor">#99999</item>
+        <item name="StatusTextSize">13sp</item> 
+        <item name="StatusButtonTextColor">#999999</item>
+        <item name="StatusButtonTextSize">13sp</item>
+        <item name="StatusButtonBackground">@drawable/status_loading_layout_button</item>
 
-<style name="LoadingLayoutStyle" parent="LoadingLayout.Style">
-    <item name="llEmptyImage">@mipmap/empty</item>
-    <item name="llErrorImage">@mipmap/error</item>
-    ...
-</style>
+        <item name="StatusEmptyImage">@mipmap/empty</item>
+        <item name="StatusEmptyText">暂无数据</item>
+        <item name="StatusErrorImage">@mipmap/error</item>
+        <item name="StatusErrorText">无网络连接，请检查您的网络...</item>
+        <item name="StatusRetryText">加载失败，点击重试~~</item>
+        <item name="StatusLoadingText">正在加载...</item>
+    </style>
+
 ```
 
 **用法一：在布局中使用**
 
 ``` xml  
-<ezy.ui.layout.LoadingLayout
-    android:id="@+id/loading"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
+ <lzhs.com.StatusView
+        android:id="@+id/mStatusView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="This is Content"/>
-        
-</ezy.ui.layout.LoadingLayout>
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="这个是内容视图" />
+    </lzhs.com.StatusView>
  
 ``` 
 
@@ -145,20 +164,9 @@ setRetryListener(OnClickListener listener)
 
  
 
-## License
+## 提问以及反馈
+[GitHub 地址](https://jitpack.io/#LZHS/StatusView)  
 
-```
-Copyright 2016 czy1121
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
+[QQ 邮箱：1050629507@qq.com](1050629507@qq.com)   
+ 有问题，请反馈到邮箱，我将第一时间反馈
+ 

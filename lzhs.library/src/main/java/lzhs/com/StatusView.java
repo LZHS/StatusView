@@ -165,8 +165,9 @@ public class StatusView extends FrameLayout {
      *
      * @param mRetryListenet
      */
-    public void setRetryListenet(OnClickListener mRetryListenet) {
+    public StatusView setRetryListenet(OnClickListener mRetryListenet) {
         mConfig.mRetryListenet = mRetryListenet;
+        return this;
     }
 
     /**
@@ -174,8 +175,9 @@ public class StatusView extends FrameLayout {
      *
      * @param mEmptyListenet
      */
-    public void setEmptyListenet(OnClickListener mEmptyListenet) {
+    public StatusView setEmptyListenet(OnClickListener mEmptyListenet) {
         mConfig.mEmptyListenet = mEmptyListenet;
+        return this;
     }
 
     /**

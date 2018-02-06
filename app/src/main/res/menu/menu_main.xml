@@ -4,10 +4,10 @@
 
     <item
         android:id="@+id/action_01"
-        android:title="动态更改界面展示"
+        android:title="用法展示一"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_02"
-        android:title="扩展自己定义界面"
+        android:title="用法展示二"
         app:showAsAction="never" />
 </menu>

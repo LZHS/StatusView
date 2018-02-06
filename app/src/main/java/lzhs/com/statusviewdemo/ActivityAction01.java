@@ -1,44 +1,38 @@
 package lzhs.com.statusviewdemo;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.widget.Toast;
 
 import java.util.Arrays;
 
 import lzhs.com.StatusView;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * <br/>
+ * 作者：LZHS<br/>
+ * 时间： 2018/2/6 16:16<br/>
+ * 邮箱：1050629507@qq.com
+ */
+public class ActivityAction01 extends AppCompatActivity {
+    public static void start(Context mContext) {
+        Intent mIntent = new Intent();
+        mIntent.setClass(mContext, ActivityAction01.class);
+        mContext.startActivity(mIntent);
+    }
 
-    Toolbar mToolbar = null;
-
-    StatusView mStatusView = null;
-
-    TabLayout mTabLayout = null;
+    StatusView mStatusView;
+    TabLayout mTabLayout;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mToolbar = findViewById(R.id.mToolbar);
-        setSupportActionBar(mToolbar);
-        mStatusView = StatusView.wrap(findViewById(R.id.mViewContent));
-        mStatusView.setEmptyListenet(v-> Toast.makeText(this,"你点击了空视图",Toast.LENGTH_LONG).show())
-        .setRetryListenet(v -> Toast.makeText(this,"你点击了重试",Toast.LENGTH_LONG).show());
-        mToolbar.setOnMenuItemClickListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.action_01:
-                    ActivityAction01.start(MainActivity.this);
-                    break;
-                case R.id.action_02:
-                    ActivityAction02.start(MainActivity.this);
-                    break;
-            }
-            return true;
-        });
+        setContentView(R.layout.activity_action01);
+        mStatusView = findViewById(R.id.mStatusView);
+        mStatusView.showContent();
         mTabLayout = findViewById(R.id.mTabLayout);
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -73,12 +67,4 @@ public class MainActivity extends AppCompatActivity {
             mTabLayout.addTab(mTabLayout.newTab().setText(s));
 
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-
 }
