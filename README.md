@@ -19,7 +19,7 @@ allprojects {
 		}
 	}
 dependencies {
-	        compile 'com.github.LZHS:StatusView:v1.0'
+	        compile 'com.github.LZHS:StatusView:v1.0.1'
 	}
 ```
     
