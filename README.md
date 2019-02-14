@@ -2,11 +2,11 @@
 简单实用的页面多状态布局(content,loading,empty,error)  
  
 [GitHub 地址](https://github.com/LZHS/StatusView)
-![内容视图](https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145823-156.jpg?raw=true)
-![加载视图](https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145457-429.jpg?raw=true)
-![错误视图](https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145509-817.jpg?raw=true)
-![空视图](https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145517-721.jpg?raw=true)
-
+<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145823-156.jpg?raw=true" width = 40% height = 40% />
+<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145457-429.jpg?raw=true" width = 40% height = 40% />
+<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145509-817.jpg?raw=true" width = 40% height = 40% />
+<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145517-721.jpg?raw=true" width = 40% height = 40% />
+pg?raw=true)
 
 ## Gradle
 [![](https://jitpack.io/v/LZHS/StatusView.svg)](https://jitpack.io/#LZHS/StatusView)
