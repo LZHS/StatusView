@@ -3,13 +3,13 @@
  
 [GitHub 地址](https://github.com/LZHS/StatusView)，效果图如下： <br/> 
 
-<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145823-156.jpg?raw=true" width = 40% height = 40% />
+<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145823-156.jpg?raw=true" width = 30% height = 40% />
 
-<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145457-429.jpg?raw=true" width = 40% height = 40% />
+<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145457-429.jpg?raw=true" width = 30% height = 40% />
 
-<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145509-817.jpg?raw=true" width = 40% height = 40% />
+<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145509-817.jpg?raw=true" width = 30% height = 40% />
 
-<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145517-721.jpg?raw=true" width = 40% height = 40% />
+<img src="https://github.com/ThirteenKilometers/GuardianLife/blob/master/Images/Screenshot_20180206-145517-721.jpg?raw=true" width = 30% height = 40% />
 
 ## Gradle
 [![](https://jitpack.io/v/LZHS/StatusView.svg)](https://jitpack.io/#LZHS/StatusView)
